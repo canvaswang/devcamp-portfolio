@@ -25,7 +25,13 @@ module DevcampPortfolio
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
-    # Don't generate system test files.
-    config.generators.system_tests = nil
+    config.generators do |g|
+      g.system_tests             nil   # Don't generate system test files.
+      # g.test_framework           :test_unit, fixture: false
+      g.orm                      :active_record
+      g.template_engine          :erb
+      g.stylesheets              false
+      g.javascripts              false
+    end
   end
 end
