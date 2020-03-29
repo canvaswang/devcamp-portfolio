@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+
+  def copyright_helper
+    CanvasWangViewTool::Renderer.copyright("Canvas Corp", "All rights reserved")
+  end
 end

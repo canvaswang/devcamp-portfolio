@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/canvaswang/canvaswang_view_tool
+  revision: 895c5dc37630fbff0d65094b535af9fdaa9be3a0
+  specs:
+    canvaswang_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -185,6 +191,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap (~> 4.0.0)
   byebug
+  canvaswang_view_tool!
   coffee-rails (~> 4.2)
   devise (~> 4.7, >= 4.7.1)
   friendly_id (~> 5.2.4)
