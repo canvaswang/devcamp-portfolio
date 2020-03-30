@@ -57,3 +57,4 @@ gem 'friendly_id', '~> 5.2.4'
 gem 'devise', '~> 4.7', '>= 4.7.1'
 
 gem 'canvaswang_view_tool', git: "https://github.com/canvaswang/canvaswang_view_tool"
+gem 'petergate', '~> 2.0', '>= 2.0.1'
