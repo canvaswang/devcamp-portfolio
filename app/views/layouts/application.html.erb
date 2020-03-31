@@ -14,30 +14,26 @@
   </head>
 
   <body>
-  	<p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
           <h3 class="masthead-brand">Cover</h3>
           <nav class="nav nav-masthead justify-content-center">
             <%= render "shared/application_nav" %>
+            <%= login_helper("nav-link") %>
           </nav>
         </div>
       </header>
 
-      <%= login_helper %>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
 
-      <%= yield %>
+      <main role="main" class="inner cover">
+        <%= yield %>
+      </main>
 
+      <%= render "shared/application_footer" %>
       <%= source_helper("application") %>
-
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <%= copyright_helper %>
-        </div>
-      </footer>
     </div>
   </body>
 </html>
