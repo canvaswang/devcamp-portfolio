@@ -17,14 +17,27 @@
   	<p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    <%= render "shared/nav", location: "top" %>
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Cover</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <%= render "shared/application_nav" %>
+          </nav>
+        </div>
+      </header>
 
-    <%= login_helper %>
+      <%= login_helper %>
 
-    <%= yield %>
+      <%= yield %>
 
-    <%= copyright_helper %>
+      <%= source_helper("application") %>
 
-    <%= source_helper("application") %>
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <%= copyright_helper %>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
